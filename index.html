@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.pexels.com/    images-->
+<!-- https://unsplash.com/   images-->
+<!--      fontawesome.com        icons-->
+<!--      tinypng.com        icons-->
+<!-- https://uigradients.com/#MoonlitAsteroid     colors-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/popular-destination.css">
+    <link rel="stylesheet" href="css/popular-places.css">
+    <link rel="stylesheet" href="css/travel-variation-area.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/populardestination.js"></script>
+    <script src="js/popular-places.js"></script>
+    <title>Travelocity</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo-id" src="img/travelocity.jpg" alt="">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown">
+                        <li><a href="abhishek/index.html">Pages &nbsp;&nbsp;&#9660;</a></li>
+                        <div class="dropdown-content">
+                            <a href="abhishek/index.html">
+                                <li>Destination Details</li>
+                            </a>
+                            <a href="abhishek/index.html">
+                                <li>Elements</li>
+                            </a>
+                        </div>
+                    </div>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="abhishek/index.html">Destination</a></li>
+                    <div class="dropdown">
+                        <li><a href="francis/blog.html">Blog &nbsp;&nbsp;&#9660;</a></li>
+                        <div class="dropdown-content">
+                            <a href="francis/blog.html">
+                                <li>Blog</li>
+                            </a>
+                            <a href="francis/blog.html">
+                                <li>Single Blog</li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="phone-number">
+                <div id="phone"><img style="height: 45px;width: 45px;" src="img/phone.png" /></div>
+                <div id="number">
+                    <p>(+91)9835174078</p>
+                </div>
+
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><img id="facebook" style="width: 40px;height: 40px;"
+                        src="img/facebook.png" /></a>
+                <a href="https://www.google.com/intl/en-GB/gmail/about/#"><img id="google"
+                        style="width: 40px;height: 40px;" src="img/google.png" /></a>
+                <a
+                    href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fprofile%2Fview&trk=login_reg_redirect"><img
+                        id="linkedin" style="width: 40px;height: 40px;" src="img/linkedin.png" /></a>
+                <img onclick="div_show()" id="search" style="width: 40px;height: 40px;" src="img/search.png" />
+            </div>
+        </div>
+    </header>
+    <div id="abc">
+        <textarea id="message"></textarea>
+        <img style="height:80px;" id="search_box" src="img/search-box.png" onclick="div_hide()">
+    </div>
+    <div class="banner-slider">
+        <div class="banner">
+            <div class="banner-images fade">
+                <img src="img/banners/banner1.png" style="width:100%">
+                <div class="banner-caption">Australia<a href="index.html" class="explore">Explore Now</a></div>
+            </div>
+            <div class="banner-images fade">
+                <img src="img/banners/banner2.png" style="width:100%">
+                <div class="banner-caption">Indonesia<a href="index.html" class="explore">Explore Now</a></div>
+            </div>
+            <div class="banner-images fade">
+                <img src="img/banners/banner3.png" style="width:100%">
+                <div class="banner-caption">Switzerland<a href="index.html" class="explore">Explore Now</a></div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusDivs(-1);">&#10094;</a>
+        <!--  &#10094; hex code for left arrow -->
+        <a class="next" onclick="plusDivs(1)">&#10095;</a>
+        <!--  &#10094; hex code for right arrow -->
+    </div>
+    <div style="margin-left: 0;" id="date-plan">
+        <div id="question">
+            <h3>Where you want to go?</h3>
+        </div>
+        <div style="margin-left: 20px;" id="input-field">
+            <input type="text" placeholder="Where to go?">
+        </div>
+        <div style="margin-left: 20px;" id="input-field">
+            <input style="height: 52px;" id="date-chooser" placeholder="Date">
+        </div>
+        <div style="margin-left: 20px;" id="input-field1">
+            <button id="list_name">Travel Type &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                &emsp14; &#9660;</button>
+            <div class="list">
+                <a href="">Italy</a>
+                <a href="">Brazil</a>
+                <a href="">America</a>
+            </div>
+        </div>
+        <div style="margin-left: 5px;" id="input-field">
+            <a href=""><button class="place-search" type="submit">Search</button></a>
+        </div>
+    </div>
+    <div id="popular-destination">
+        <h3>Popular Destination</h3>
+        <p>The World Is Too Big To Leave Unexplored.</p>
+    </div>
+    <br>
+    <div id="destination">
+        <div class="destination-image">
+            <a class="dest-image" href=""><img src="img/destination/1.png"></a>
+            <div class="popular-destination-info">
+                <p>Italy <a href="abhishek/index.html"> 07 Places</a> </p>
+            </div>
+        </div>
+        <div class="destination-image">
+            <a class="dest-image" href="abhishek/index.html"><img src="img/destination/2.png"></a>
+            <div class="popular-destination-info">
+                <p>Brazil <a href=""> 03 Places</a> </p>
+            </div>
+        </div>
+        <div class="destination-image">
+            <a class="dest-image" href="abhishek/index.html"><img src="img/destination/3.png"></a>
+            <div class="popular-destination-info">
+                <p>America <a href=""> 10 Places</a> </p>
+            </div>
+        </div>
+        <div class="destination-image">
+            <a class="dest-image" href="abhishek/index.html"><img src="img/destination/4.png"></a>
+            <div class="popular-destination-info">
+                <p>Nepal <a href=""> 02 Places</a> </p>
+            </div>
+        </div>
+        <div class="destination-image">
+            <a class="dest-image" href="abhishek/index.html"><img src="img/destination/5.png"></a>
+            <div class="popular-destination-info">
+                <p>Maldives <a href=""> 02 Places</a> </p>
+            </div>
+        </div>
+        <div class="destination-image">
+            <a class="dest-image" href="abhishek/index.html"><img src="img/destination/6.png"></a>
+            <div class="popular-destination-info">
+                <p>Indonesia <a href=""> 05 Places</a> </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="popular-places">
+        <div class="popular-places-title">
+            <h3>Popular Places</h3>
+            <p>Manly. Seven Miles from Sydney, a Thousand Miles from Care…</p>
+        </div>
+        <br>
+        <div class="places">
+            <a href="">
+                <div class="place-picture">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/1.png" alt="">
+                        </div>
+                        <div class="place-info">
+                            <a href="">
+                                <h3>California</h3>
+                            </a>
+                            <p>United State of America</p>
+                            <div class="ratings">
+                                <span class="stars">
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <a href="">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="place-picture">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="img/place/2.png" alt="">
+                    </div>
+                    <div class="place-info">
+                        <a href="abhishek/index.html">
+                            <h3>Corola Megna</h3>
+                        </a>
+                        <p>United State of America</p>
+                        <div class="ratings">
+                            <span class="stars">
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <a href="">(20 Review)</a>
+                            </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="">5 Days</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-picture">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="img/place/3.png" alt="">
+                    </div>
+                    <div class="place-info">
+                        <a href="abhishek/index.html">
+                            <h3>London</h3>
+                        </a>
+                        <p>United State of America</p>
+                        <div class="ratings">
+                            <span class="stars">
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <a href="">(20 Review)</a>
+                            </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="">5 Days</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-picture">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="img/place/4.png" alt="">
+                    </div>
+                    <div class="place-info">
+                        <a href="abhishek/index.html">
+                            <h3>Miami Beach</h3>
+                        </a>
+                        <p>United State of America</p>
+                        <div class="ratings">
+                            <span class="stars">
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <a href="">(20 Review)</a>
+                            </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="">5 Days</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-picture">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="img/place/5.png" alt="">
+                    </div>
+                    <div class="place-info">
+                        <a href="abhishek/index.html">
+                            <h3>Brazil</h3>
+                        </a>
+                        <p>United State of America</p>
+                        <div class="ratings">
+                            <span class="stars">
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <a href="">(20 Review)</a>
+                            </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="">5 Days</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-picture">
+                <div class="single_place">
+                    <div class="thumb">
+                        <img src="img/place/6.png" alt="">
+                    </div>
+                    <div class="place-info">
+                        <a href="abhishek/index.html">
+                            <h3>Saintmarine Island</h3>
+                        </a>
+                        <p>United State of America</p>
+                        <div class="ratings">
+                            <span class="stars">
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <i class="fa fa-star checked" aria-hidden="true"></i>
+                                <a href="">(20 Review)</a>
+                            </span>
+                            <div class="days">
+                                <i class="fa fa-clock-o"></i>
+                                <a href="">5 Days</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="more-places">
+        <a href="#"><button>More Places</button></a>
+    </div>
+    <br>
+    <div class="video-container">
+        <img src="img/video.png" alt="">
+        <div class="video-caption">
+            <h3>Enjoy Video</h3>
+            <div class="play-icon">
+                <a class="play-button" href="#">
+                    <i class="fa fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="travel-variation-area">
+        <div class="travel-variation">
+            <div class="comfort-journey">
+                <div class="icons">
+                    <img src="img/svg-icon/1.svg" alt="">
+                </div>
+                <h3>Comfortable Journey</h3>
+                <p>A wonderful serenity has taken to the<br>possession of my entire soul.</p>
+            </div>
+            <div class="comfort-journey">
+                <div class="icons">
+                    <img src="img/svg-icon/2.svg" alt="">
+                </div>
+                <h3>Luxuries Hotel</h3>
+                <p>A wonderful serenity has taken to the<br>possession of my entire soul.</p>
+            </div>
+            <div class="comfort-journey">
+                <div class="icons">
+                    <img src="img/svg-icon/3.svg" alt="">
+                </div>
+                <h3>Travel Guide</h3>
+                <p>A wonderful serenity has taken to the<br>possession of my entire soul.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <div class="footer-image-address">
+            <div class="footer-image">
+                <a href="#"><img src="img/travelocity.jpg" alt=""></a>
+            </div>
+            <div class="footer-address">
+                <p>Hostel - 11 106,107,165 IGH Road, green <br>
+                    lane BIT Mesra-835215 <br>
+                    +91 983 517 4078 <br>
+                    amartya@killerbose.com</p>
+            </div>
+        </div>
+        <div class="company-names">
+            <h3>Company</h3>
+            <ul class="names">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#"> Gallery</a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-destination-names">
+            <h3>Popular Destination</h3>
+            <ul class="footer-destinations">
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">America</a></li>
+                <li><a href="#">India</a></li>
+                <li style="margin-left: 15px;"><a href="#">Switzerland</a></li>
+                <li><a href="#">Italy</a></li>
+                <li style="margin-left: 49px;"><a href="#">Canada</a></li>
+                <li><a href="#">France</a></li>
+                <li style="margin-left: 30px;"><a href="#">England</a></li>
+            </ul>
+        </div>
+        <div class="footer-instagram">
+            <div class="footer-title-instagram">
+                <h3>Instagram</h3>
+            </div>
+            <div class="footer-place-images">
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/1.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/2.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/3.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/4.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/5.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/6.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

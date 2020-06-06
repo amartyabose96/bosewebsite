@@ -1,0 +1,86 @@
+.team-container{
+    align-items: center;
+}
+.team-member{
+    float: left;
+    margin-right: 7%;
+
+}
+.team-title{
+        text-align: center;
+        margin-top: 20px;
+}
+.team-row{
+    margin-top: 80px;
+}
+.section-subtitle{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #72728c;
+    line-height: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.section-title h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 26px;
+    text-shadow: rgba(0,0,0,0.2) 0 0 1px;
+}
+.team-member-name a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(24,24,24,1);
+    line-height: 1.2;
+    transition: all 200ms ease;
+    margin-left: 36%;
+    margin-top: 25px;
+}
+.team-image img{
+    border-radius: 100px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    margin-left: 30%;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+.team-image img:hover{
+    margin-top: -5%;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 1);
+    transition-timing-function: linear;
+    transition-duration: 0.8;
+}
+.team-content{
+    margin-top: 10%;
+}
+.team-member-name a:hover{
+    color:red;
+}
+.team-member-name p{
+    text-align: center;
+    margin-left: 20%;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.9285;
+    font-weight: 400;
+    color: #656566;
+}
+.team-image img:hover{
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+}

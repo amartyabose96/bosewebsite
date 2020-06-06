@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/about.js"></script>
+    <title>Travelocity</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo-id" src="img/travelocity.jpg" alt="">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown">
+                        <li><a href="abhishek/index.html">Pages &nbsp;&nbsp;&#9660;</a></li>
+                        <div class="dropdown-content">
+                            <a href="abhishek/index.html">
+                                <li>Destination Details</li>
+                            </a>
+                            <a href="abhishek/index.html">
+                                <li>Elements</li>
+                            </a>
+                        </div>
+                    </div>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="abhishek/index.html">Destination</a></li>
+                    <div class="dropdown">
+                        <li><a href="francis/blog.html">Blog &nbsp;&nbsp;&#9660;</a></li>
+                        <div class="dropdown-content">
+                            <a href="francis/blog.html">
+                                <li>Blog</li>
+                            </a>
+                            <a href="francis/single blog.html">
+                                <li>Single Blog</li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="phone-number">
+                <div id="phone"><img style="height: 50px;width: 50px;" src="img/phone.png" /></div>
+                <div id="number">
+                    <p>(+91)9835174078</p>
+                </div>
+
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><img id="facebook" style="width: 40px;height: 40px;"
+                        src="img/facebook.png" /></a>
+                <a href="https://www.google.com/intl/en-GB/gmail/about/#"><img id="google"
+                        style="width: 40px;height: 40px;" src="img/google.png" /></a>
+                <a
+                    href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fprofile%2Fview&trk=login_reg_redirect"><img
+                        id="linkedin" style="width: 40px;height: 40px;" src="img/linkedin.png" /></a>
+                <img onclick="div_show()" id="search" style="width: 40px;height: 40px;" src="img/search.png" />
+            </div>
+        </div>
+    </header>
+    <div id="abc">
+        <textarea id="message"></textarea>
+        <img style="height:80px;" id="search_box" src="img/search-box.png" onclick="div_hide()">
+    </div>
+
+
+    <div class="team">
+        <div class="team-container">
+            <div class="team-row">
+                <div class="team-title">
+                    <div class="section-subtitle">Simply Amazing Team</div>
+                    <div class="section-title">
+                        <h2>Meet the Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="team-row">
+
+                <div style="margin-left: 6%;" class="team-member">
+                    <div class="team-item">
+                        <div class="team-image"><img src="img/team/team1.jpg" alt=""></div>
+                        <div style="margin-left: 3%;" class="team-content">
+                            <div class="team-member-name">
+                                <a href="#">Amartya Bose</a>
+                                <p>This is a demo descrption about our team member.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-item">
+                        <div class="team-image"><img src="img/team/team2.jpg" alt=""></div>
+                        <div style="margin-left: 8%;" class="team-content">
+                            <div class="team-member-name">
+                                <a href="#">Francis Ekka</a>
+                                <p>This is a demo descrption about our team member.</p>
+                            </div>
+                        </div>
+                        <div class="team-description">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-item">
+                        <div class="team-image"><img src="img/team/team3.jpg" alt=""></div>
+                        <div style="margin-left: -2%;" class="team-content">
+                            <div class="team-member-name">
+                                <a href="#">Abhishek Kumar</a>
+                                <p>This is a demo descrption about our team member.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <div class="footer-image-address">
+            <div class="footer-image">
+                <a href="#"><img src="img/travelocity.jpg" alt=""></a>
+            </div>
+            <div class="footer-address">
+                <p>Hostel - 11 106,107,165 IGH Road, green <br>
+                    lane BIT Mesra-835215 <br>
+                    +91 983 517 4078 <br>
+                    amartya@killerbose.com</p>
+            </div>
+        </div>
+        <div class="company-names">
+            <h3>Company</h3>
+            <ul class="names">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#"> Gallery</a></li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-destination-names">
+            <h3>Popular Destination</h3>
+            <ul class="footer-destinations">
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">America</a></li>
+                <li><a href="#">India</a></li>
+                <li style="margin-left: 15px;"><a href="#">Switzerland</a></li>
+                <li><a href="#">Italy</a></li>
+                <li style="margin-left: 49px;"><a href="#">Canada</a></li>
+                <li><a href="#">France</a></li>
+                <li style="margin-left: 30px;"><a href="#">England</a></li>
+            </ul>
+        </div>
+        <div class="footer-instagram">
+            <div class="footer-title-instagram">
+                <h3>Instagram</h3>
+            </div>
+            <div class="footer-place-images">
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/1.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/2.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/3.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/4.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/5.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-insta-image">
+                    <a href="#">
+                        <img src="img/instagram/6.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
